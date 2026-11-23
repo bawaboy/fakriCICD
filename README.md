@@ -1,6 +1,6 @@
 # epf-app — base commune du Projet CI/CD
 
-![CI](https://github.com/<organisation>/<depot>/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/bawaboy/mon-depot/actions/workflows/ci.yml/badge.svg)\n' README.md
 
 Point de départ de toutes les équipes : une petite API Express, sa chaîne d'intégration
 continue et sa publication d'image. Vous y ajouterez, séance après séance, le monitoring,
@@ -16,7 +16,7 @@ Terraform, Ansible et vos rapports.
 | Image | `Dockerfile` | Multi-étapes, utilisateur non root, `HEALTHCHECK` sur `/health` |
 | CI | `.github/workflows/ci.yml` | À chaque push sur `main` et chaque PR : lint, tests, build, détection de secrets (gitleaks), dépendances (`npm audit`), analyse statique (Semgrep) |
 | Release | `.github/workflows/release.yml` | Sur un tag `v*` : build de l'image, scan Trivy, test de démarrage, publication sur GHCR (`vX.Y.Z` et `stable`), release GitHub |
-| Mises à jour | `.github/dependabot.yml` | PR hebdomadaires pour npm et les actions |
+git checkout -b maj-badge-readme| Mises à jour | `.github/dependabot.yml` | PR hebdomadaires pour npm et les actions |
 
 ## Ce que vous ajouterez
 
